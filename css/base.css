@@ -1,0 +1,36 @@
+@charset "utf-8";
+/**********************
+/样式重置
+**********************/
+html,body,div,span,applet,object,iframe,table,caption,tbody,tfoot,thead,tr,th,td,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,acronym,address,big,cite,code,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,input{margin:0;padding:0;list-style:none;border:0}h1,h2,h3,h4,h5,h6{font-weight:400}body{font-size:12px;color:#666;}body,body *{font-family:"Microsoft Yahei",Arial helvetica,sans-serif;}a{cursor:pointer;color:#1c769a;text-decoration:none;font-size:1.1em;}a:hover,a:active,a:link,a:visited{text-decoration:none}br{line-height:8px;margin:0px;}
+/**********************
+*共样式[header|nav|body|footer]
+**********************/
+.header { height: 50px;  background-color: #0092D8;  position: fixed;z-index: 10000;  top: 0;  left: 0;  width: 100%;  min-width: 600px;  }
+.header .logo {  height: 100%;  width: 80px;  margin: 0 0 0 15px;  }
+.header h1 {  color: #fff;  margin: 10px 30px 0 0;  font-weight: 500;  }
+.pull-left {  float: left !important;  }
+.pull-right {  float: right !important;  }
+.tool-btn{  margin: 13px 20px 0 0;  }
+.section{width: 100%}
+.left-nav{  position: fixed;  width: 330px;  left: 0px;  bottom: 0;  top: 50px;  background: #ccc;  padding: 9px 0;  z-index: 10;  }
+.nav-list{    padding-left: 15px;  padding-right: 15px;}
+.nav-header{  cursor: pointer;  font-size: 14px;  color: #fff;  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.3);  }
+.input_set{border: 1px solid #cccccc;line-height: 30px;width: 300px;}
+/*按钮*/
+.btn-blue{  height: 30px;  padding: 0 12px;  line-height: 30px;  background-color: #0090ff;  color: #fff;  font-size: 16px;  border: 1px solid transparent;  border-radius: 1px;  cursor: pointer;  }
+.btn-blue span{  height: 30px;  line-height: 30px;  }
+.btn-green{  height: 24px;  padding: 0 12px;  line-height: 24px;  background-color: #8bce52;  color: #fff;  font-size: 14px;  border: 1px solid transparent;  border-radius: 1px;  cursor: pointer;  }
+.btn-green span{  height: 24px;  line-height: 24px;  }
+.btn-white{  height: 30px;  padding: 0 12px;  font-size: 16px;  line-height: 30px;  background-color: #fff;  border: 1px solid #bababa;  border-radius: 1px;  }
+.btn-white span{  height: 30px;  line-height: 30px;  }
+.btn-blue:hover, .btn-blue:focus,.btn-white:hover, .btn-white:focus{  text-decoration:none;  outline: none;  }
+
+.widget-item {  width:72%;  margin:5px 4%;  border: 1px dashed #999;  padding: 5px 15px;  cursor:move;  border-radius:2px;  -webkit-transition: background ease-in-out 0.15s;  -moz-transition: background ease-in-out 0.15s;  transition: background ease-in-out 0.15s;  background-color:#f5f5f5;  position:relative;  z-index:100;  }
+.widget-item:hover {  background-color: #d0e2f3;  border-color: #57a5ca;  border-style: solid;  }
+.wd-container{  margin: 50px 0px 0px 330px;  }
+.widget-control{  min-height: 580px;  }
+.form-placeholder-filed {  height:60px;  border:2px dashed #DB4040;  }
+
+
+

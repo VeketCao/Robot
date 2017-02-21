@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ripple自动交易机器人</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="shortcut icon" href="img/v_favicon.ico">
+
+    <script src="lib/require/require.min.js"></script>
+    <script src="js/require-config.js"></script>
+    <script src="js/main.js"></script>
+</head>
+<body>
+<div>
+    <header class="header">
+        <figure class="pull-left logo"><a></a></figure>
+        <h1 class="pull-left fts18">Ripple自动交易机器人（试用版）</h1>
+
+    </header>
+    <section class="section">
+        <div class="left-nav pull-left">
+            <div style="margin-left: 10px;font-size: 16px;">
+                <label>设置参数</label>
+                <div style="margin-top: 20px;">
+                    ripple address：
+                    <input class="input_set" id="xrp_address" >
+                </div>
+                <div style="margin-top: 20px;">
+                    ripple secret：
+                    <input type="password" class="input_set" id="xrp_key">
+                </div>
+                <div style="margin-top: 20px;">
+                    交易网关地址：
+                    <input class="input_set" value="rKiCet8SdvWxPXnAgYarFUXMh1zCPz432Y">
+                </div>
+                <div style="margin-top: 20px;">
+                    <a class="btn-blue" id="start_btn">启动</a>
+                    <a class="btn-white" style="margin-left: 30px;" id="stop_btn">停止</a>
+                </div>
+            </div>
+        </div>
+        <div class="wd-container">
+            <div style="line-height: 50px;margin-left: 50px;">
+                <label >XRP:<span id="xrp_sp"></span></label>
+                <label style="margin-left: 50px;">CNY:<span id="cny_sp"></span></label>
+                <label style="margin-left: 50px;">asks:<span id="asks_sp"></span></label>
+            </div>
+            <textarea id="log_info" style="width: 100%;height: 380px;background: #000;color:#fff" disabled>...log message...</textarea>
+            <div style="margin-top: 10px;font-size: 14px;">
+                <label>说明：</label>
+                <p>设置完后直接点击启动按钮，必须使用chrome浏览器，使用了浏览器的Web SQL，算法采用区间交易法，默认区间在[0.04,0.07]，买卖每单默认值交易数量2000xrp；如要需要改交易参数，请购买源码，可修改require-config.js中各种参数，区间参数，定时交易参数，每单交易数量，交易网关等，在本机浏览器就可以运行</p>
+                <p>免费试用版本无法配置其他交易参数，免费试用一个月，需要可配置版，请购买源码；</p>
+                <p>购买源码请联系QQ:1150595910;价格5000xrp/套</p>
+            </div>
+        </div>
+    </section>
+</div>
+</body>
+</html>
